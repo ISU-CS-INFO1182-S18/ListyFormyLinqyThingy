@@ -20,6 +20,39 @@ namespace ListyFormyLinqyThingy {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+
+            SuperHero[] sups = new SuperHero[4];
+            sups[0] = new SuperHero("mad","mike");
+            sups[1] = new SuperHero("mad","mike");
+            sups[2] = new SuperHero("mad","mike");
+            sups[3] = new SuperHero("mad","mike");
+           // sups[4] = new SuperHero("mad","mike");
+
+            List<SuperHero> supd = new List<SuperHero>(5);
+            SuperHero s = new SuperHero("Bob","Awesome");
+            MessageBox.Show(sups.Length + " | " + supd.Count().ToString());
+            
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+            supd.Add(s);
+
+            MessageBox.Show(sups.Length + " | " + supd.Count().ToString());
+
+            
+
         }
     }
 }
