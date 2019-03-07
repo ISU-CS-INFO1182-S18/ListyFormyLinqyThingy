@@ -58,6 +58,7 @@
     <Compile Include="SuperHero.cs" />
     <Compile Include="Vehicle.cs" />
     <Compile Include="Villian.cs" />
+    <Compile Include="zzPopulatedCode.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

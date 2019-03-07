@@ -107,7 +107,6 @@ namespace ListyFormyLinqyThingy {
                 _Personality = value;
             }
         }
-
         /// <summary>
         /// Gets and Sets the Date our person was born
         /// </summary>
@@ -126,6 +125,13 @@ namespace ListyFormyLinqyThingy {
                 }
             }
         }
+
+        public int Age {
+            get {
+                return (int)((DateTime.Now - _DateOfBirth).TotalDays / 365.29);
+            }
+        }
+
 
         #endregion
 
