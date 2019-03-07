@@ -11,7 +11,7 @@ namespace ListyFormyLinqyThingy {
     /// <remarks>
     /// This class is based from Prof. Holmes Deliver 5 Solution
     /// </remarks>
-    abstract class  Person {
+    abstract class  Person : IComparable {
         #region Private Variables 
         // This is the data!!!!
         private String _FirstName = "Frank";
@@ -153,6 +153,16 @@ namespace ListyFormyLinqyThingy {
         }
 
         public abstract Person CopyMe();
+
+        public int CompareTo(object obj) {
+            // 1 0 -1
+            return this.Age.CompareTo(((Person)obj).Age);
+        }
+
+        public override string ToString() {
+            return this.FullName + " " + this.Age;
+        }
+
 
 
 

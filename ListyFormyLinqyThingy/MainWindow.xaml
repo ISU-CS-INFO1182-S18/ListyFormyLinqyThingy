@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btnClickMe"  HorizontalAlignment="Left" Margin="230,129,0,0" VerticalAlignment="Top" Width="75" Height="53" Click="BtnClickMe_Click">
+            <Button.Content>
+                <TextBlock TextAlignment="Center" TextWrapping="Wrap">Click Me for fun and excitement</TextBlock>
+            </Button.Content>
+        </Button>
+        <TextBlock x:Name="tbOutput" HorizontalAlignment="Left" Margin="486,95,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <StackPanel x:Name="stkList" HorizontalAlignment="Left" Height="100" Margin="498,153,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnOtherButton" Content="Button" HorizontalAlignment="Left" Margin="56,105,0,0" VerticalAlignment="Top" Width="137" Height="104" Click="BtnOtherButton_Click"/>
+
     </Grid>
 </Window>
