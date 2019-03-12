@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListyFormyLinqyThingy {
+namespace MyObjects {
     class zzPopulatedCode {
         List<Citizen> citz = new List<Citizen>();
         private void PopulateCity() {

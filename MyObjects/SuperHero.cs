@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListyFormyLinqyThingy {
+namespace MyObjects {
     class SuperHero : Person, IPowered {
         private string _CapeColor;
         private Citizen _SecretIdentity;

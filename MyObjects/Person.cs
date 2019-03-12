@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListyFormyLinqyThingy {
+namespace MyObjects {
     /// <summary>
     /// This is a representation of things that we call people.
     /// </summary>
@@ -19,6 +19,8 @@ namespace ListyFormyLinqyThingy {
         private String _LastName = "Bobworth";
         private DateTime _DateOfBirth;
         private Personalities _Personality;
+
+        public static int MagicNumber = 0;
         #endregion
 
         #region Public Enums

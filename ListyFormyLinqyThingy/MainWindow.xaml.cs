@@ -134,5 +134,22 @@ namespace ListyFormyLinqyThingy {
             citz.Add(new Citizen() { FirstName = "Colby", MiddleName = "Leila", LastName = "Goff", DateOfBirth =            new DateTime(1986,01, 13 ) });
             return citz;
         }
+
+        private void BtnShowSomething_Click(object sender, RoutedEventArgs e) {
+            //Citizen s = new Citizen();
+            //MainWindow mw = new MainWindow();
+            //mw.Show();
+            SuperHero s = new SuperHero("Fred", "Magic");
+            frmOther fo = new frmOther();
+            //Universe u = new Universe();
+            Universe.People.Add(s);
+            Universe.People.Add(new Villian() { FirstName = "Nah" });
+            fo.ShowDialog();
+        }
+
+        private void BtnShowSomethingElse_Click(object sender, RoutedEventArgs e) {
+            Citizen c = new Citizen();
+            Citizen.MagicNumber = 2;
+        }
     }
 }

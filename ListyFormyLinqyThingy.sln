@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListyFormyLinqyThingy", "ListyFormyLinqyThingy\ListyFormyLinqyThingy.csproj", "{2B70FB43-50F2-420D-8EC3-2773CD5613CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyObjects", "MyObjects\MyObjects.csproj", "{A209FE12-12FE-4D55-8FFD-185B54DB87BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2B70FB43-50F2-420D-8EC3-2773CD5613CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B70FB43-50F2-420D-8EC3-2773CD5613CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B70FB43-50F2-420D-8EC3-2773CD5613CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A209FE12-12FE-4D55-8FFD-185B54DB87BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A209FE12-12FE-4D55-8FFD-185B54DB87BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A209FE12-12FE-4D55-8FFD-185B54DB87BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A209FE12-12FE-4D55-8FFD-185B54DB87BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

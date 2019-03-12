@@ -4,24 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListyFormyLinqyThingy {
-    class Villian:Person,IPowered {
-  
-
+namespace MyObjects {
+    class Citizen:Person {
+        //public abstract string Yell();
         public override Person CopyMe() {
-            Villian vc = new Villian();
+            Person vc = new Citizen();
             vc.FirstName = this.FirstName;
             vc.LastName = this.LastName;
-            vc.Personality = this.Personality;
+            vc.Personality = Personalities.Chatty;
             vc.MiddleName = this.MiddleName;
             vc.DateOfBirth = this.DateOfBirth;
             return vc;
-        }
-      public bool CanFly() {
-            return true;
-        }
-        public bool IsUsedForGood() {
-            return false;
         }
     }
 }

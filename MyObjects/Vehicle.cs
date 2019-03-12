@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListyFormyLinqyThingy {
+namespace MyObjects {
     class Vehicle {
         private Person[] _Passengers;
         private int _PassCount;
