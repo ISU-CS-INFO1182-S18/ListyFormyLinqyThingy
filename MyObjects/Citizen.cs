@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MyObjects {
-    class Citizen:Person {
+ public    class Citizen:Person,INumberable<int> {
         //public abstract string Yell();
         public override Person CopyMe() {
             Person vc = new Citizen();
@@ -15,6 +15,14 @@ namespace MyObjects {
             vc.MiddleName = this.MiddleName;
             vc.DateOfBirth = this.DateOfBirth;
             return vc;
+        }
+
+        public int GetFavoriteNumber() {
+            return 3;
+        }
+
+        public string SayFavorite(int value) {
+            throw new NotImplementedException();
         }
     }
 }

@@ -9,7 +9,7 @@ namespace MyObjects
     /// <summary>
     /// THings that have Powers
     /// </summary>
-    interface IPowered
+   public  interface IPowered
     {
 
          bool CanFly();

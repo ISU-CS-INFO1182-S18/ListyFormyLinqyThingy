@@ -11,7 +11,7 @@ namespace MyObjects {
     /// <remarks>
     /// This class is based from Prof. Holmes Deliver 5 Solution
     /// </remarks>
-    abstract class  Person : IComparable {
+   public abstract class  Person : IComparable<Person> {
         #region Private Variables 
         // This is the data!!!!
         private String _FirstName = "Frank";
@@ -160,10 +160,16 @@ namespace MyObjects {
             // 1 0 -1
             return this.Age.CompareTo(((Person)obj).Age);
         }
+        public int CompareTo(Person other) {
+            // 1 0 -1
+            //return this.Age.CompareTo(other.Age);
+            return other.Age.CompareTo(this.Age);
+        }
 
         public override string ToString() {
             return this.FullName + " " + this.Age;
         }
+
 
 
 

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MyObjects {
-    class SuperHero : Person, IPowered {
+   public class SuperHero : Person, IPowered {
         private string _CapeColor;
         private Citizen _SecretIdentity;
         //private laksdfjldksa _Thingy;

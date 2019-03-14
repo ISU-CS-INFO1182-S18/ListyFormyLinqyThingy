@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListyFormyLinqyThingy", "Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyObjects", "MyObjects\MyObjects.csproj", "{A209FE12-12FE-4D55-8FFD-185B54DB87BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStuff", "MyStuff\MyStuff.csproj", "{B1962167-6610-4767-A85B-8125D36475F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A209FE12-12FE-4D55-8FFD-185B54DB87BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A209FE12-12FE-4D55-8FFD-185B54DB87BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A209FE12-12FE-4D55-8FFD-185B54DB87BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1962167-6610-4767-A85B-8125D36475F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1962167-6610-4767-A85B-8125D36475F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1962167-6610-4767-A85B-8125D36475F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1962167-6610-4767-A85B-8125D36475F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

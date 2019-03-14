@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyObjects;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,7 +57,53 @@ namespace ListyFormyLinqyThingy {
             List<SuperHero> supd = new List<SuperHero>(5);
             SuperHero s = new SuperHero("Bob","Awesome");
             //MessageBox.Show(sups.Length + " | " + supd.Count().ToString());
-            
+
+
+            Hideout<SuperHero> hallOfJustice = new Hideout<SuperHero>();
+            hallOfJustice.Members.Add(Universe.SuperHeroes[0]);
+            hallOfJustice.Members.Add(Universe.SuperHeroes[1]);
+            hallOfJustice.Members.Add(Universe.SuperHeroes[2]);
+            hallOfJustice.Members.Add(Universe.SuperHeroes[3]);
+            //hallOfJustice.Members.Add(Universe.Villians[0]);
+
+            Hideout<Villian> hallOfDoom = new Hideout<Villian>();
+            hallOfDoom.Members.Add(Universe.Villians[0]);
+            hallOfDoom.Members.Add(Universe.Villians[2]);
+            hallOfDoom.Members.Add(Universe.Villians[3]);
+            hallOfDoom.Members.Add(Universe.Villians[1]);
+
+            Hideout<int> calculator = new Hideout<int>();
+            calculator.Members.Add(1);
+            calculator.Members.Add(2);
+            calculator.Members.Add(4);
+            calculator.Members.Add(5);
+            //calculator.Members.Add(87.3);
+
+            Hideout<Person> poweredAnonymous = new Hideout<Person>();
+            poweredAnonymous.Members.Add(Universe.SuperHeroes[0]);
+            poweredAnonymous.Members.Add(Universe.SuperHeroes[1]);
+            poweredAnonymous.Members.Add(Universe.Villians[2]);
+            poweredAnonymous.Members.Add(Universe.Villians[3]);
+
+            Prison<SuperHero,Villian> arkamAsylum = new Prison<SuperHero,Villian>();
+            arkamAsylum.Jailor = Universe.SuperHeroes[0];
+            arkamAsylum.Inmates.Add(Universe.Villians[2]);
+            arkamAsylum.Inmates.Add(Universe.Villians[3]);
+
+            Prison<Villian,SuperHero> smampPlace = new Prison<Villian,SuperHero>();
+            smampPlace.Jailor = Universe.Villians[0];
+            smampPlace.Inmates.Add(Universe.SuperHeroes[2]);
+            smampPlace.Inmates.Add(Universe.SuperHeroes[3]);
+
+            Prison<SuperHero, Citizen> p = new Prison<SuperHero, Citizen>();
+
+            List<int> mInts = new List<int>();
+            Dictionary<int, string> dict = new Dictionary<int, string>();
+
+            Tuple<string, int, int, string, double> t;// = new Tuple<string, int, int, string, double>()
+                
+
+
             supd.Add(s);
             supd.Add(s);
             supd.Add(s);

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MyObjects {
-    class zzPopulatedCode {
+    public class zzPopulatedCode {
         List<Citizen> citz = new List<Citizen>();
         private void PopulateCity() {
             citz.Add(new Citizen() { FirstName = "Clark", LastName = "Kent" });     //0

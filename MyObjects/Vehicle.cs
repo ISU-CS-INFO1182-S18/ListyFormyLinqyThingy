@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MyObjects {
-    class Vehicle {
+  public  class Vehicle {
         private Person[] _Passengers;
         private int _PassCount;
         private string _Name;

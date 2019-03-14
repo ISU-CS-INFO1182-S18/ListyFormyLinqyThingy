@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyObjects {
-    class Class1 {
+namespace MyStuff
+{
+    public class Class1
+    {
     }
 }

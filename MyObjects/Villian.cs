@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MyObjects {
-    class Villian:Person,IPowered {
+   public class Villian:Person,IPowered,INumberable<long> {
   
 
         public override Person CopyMe() {
@@ -22,6 +22,14 @@ namespace MyObjects {
         }
         public bool IsUsedForGood() {
             return false;
+        }
+
+        public long GetFavoriteNumber() {
+            return 213456;
+        }
+
+        public string SayFavorite(long value) {
+            throw new NotImplementedException();
         }
     }
 }
